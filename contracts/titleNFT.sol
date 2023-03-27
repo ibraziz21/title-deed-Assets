@@ -8,8 +8,8 @@ contract titleNFT is ERC721, IERC4907{
     error NotAnApprover();
     error Forbidden();
 
-    uint counter;
-    address owner;
+    uint private counter;
+    address public owner;
 
 
     // Only specific addresses, say a decentralized land commission can mint new title Deeds for users
